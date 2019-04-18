@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 //Import images
-import cajas from './img/cajas.png';
+import cajasImg from './img/cajas.png';
 
 class App extends Component {
 	render() {
@@ -25,7 +25,11 @@ class App extends Component {
 							</div>
 						</div>
 						<div className="right">
-							<img className="hero-image" src={cajas} alt="Ejemplo de cajas" />
+							<img
+								className="hero-image"
+								src={cajasImg}
+								alt="Ejemplo de cajas"
+							/>
 						</div>
 					</div>
 				</div>
