@@ -17,9 +17,8 @@
 }
 
 .hero-image-container {
-	width: 100%;
-
-	margin: 3%;
+	width: 95%;
+	margin: 5%;
 	border: 2px solid #8cf0ce;
 }
 
@@ -42,7 +41,24 @@
 	border: 1px solid red;
 }
 
+.hero-image-container .main-content .left h1 {
+	font-size: 2.6em;
+	margin-bottom: 10px;
+}
+
+.hero-image-container .main-content .left p {
+	font-size: 1em;
+	display: inline-block;
+	width: 65%;
+}
+
 .hero-image-container .main-content .right {
 	width: 55%;
 	border: 1px solid yellow;
+}
+
+.hero-image {
+	width: 75%;
+	position: relative;
+	margin-left: 15%;
 }

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+//Import images
+import cajas from './img/cajas.png';
+
 class App extends Component {
 	render() {
 		return (
@@ -23,8 +26,8 @@ class App extends Component {
 							<div className="right">
 								<img
 									className="hero-image"
-									src="./img/cajas.png"
-									alt="Example boxes"
+									src={cajas}
+									alt="Ejemplo de cajas"
 								/>
 							</div>
 						</div>
