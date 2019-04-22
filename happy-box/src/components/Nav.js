@@ -3,6 +3,10 @@ import React from 'react';
 import './styles.css';
 
 const Nav = props => {
+	// const onClick = e => {
+
+	// }
+
 	return (
 		<div className="header">
 			<img class="logo" alt="Happy Box logo" />
@@ -14,7 +18,7 @@ const Nav = props => {
 						</a>
 					</li>
 					<li>
-						<a className="nav-link active" href="#como-funciona">
+						<a className="nav-link" href="#como-funciona">
 							Como Funciona?
 						</a>
 					</li>

@@ -10,11 +10,18 @@ import ComoFunciona from './components/ComoFunciona';
 import Nav from './components/Nav';
 
 class App extends Component {
+	constructor() {
+		super();
+		this.state = { scrolling: false };
+	}
+
 	render() {
+		console.log(this.state);
 		return (
 			<div className="container">
 				<div className="hero-image-container">
-					<img className="logo" src="./logo" alt="Happy Box logo" />
+					{/* <img className="logo" src="./logo" alt="Happy Box logo" /> */}
+					<Nav />
 					<div className="main-content">
 						<div className="left">
 							<div className="hero-text">
@@ -41,7 +48,6 @@ class App extends Component {
 				</div>
 
 				<ComoFunciona />
-				<Nav />
 			</div>
 		);
 	}
