@@ -7,6 +7,7 @@ import cajasImg from './img/cajas.png';
 
 //Import Components
 import ComoFunciona from './components/ComoFunciona';
+import Nav from './components/Nav';
 
 class App extends Component {
 	render() {
@@ -40,6 +41,7 @@ class App extends Component {
 				</div>
 
 				<ComoFunciona />
+				<Nav />
 			</div>
 		);
 	}
