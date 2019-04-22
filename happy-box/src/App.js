@@ -5,6 +5,9 @@ import './App.css';
 //Import images
 import cajasImg from './img/cajas.png';
 
+//Import Components
+import ComoFunciona from './components/ComoFunciona';
+
 class App extends Component {
 	render() {
 		return (
@@ -21,7 +24,9 @@ class App extends Component {
 								</p>
 							</div>
 							<div className="cta-button">
-								<p>Descubre opciones ahora!</p>
+								<p>
+									<a href="#opciones">Descubre opciones ahora!</a>
+								</p>
 							</div>
 						</div>
 						<div className="right">
@@ -34,7 +39,7 @@ class App extends Component {
 					</div>
 				</div>
 
-				<div>Como funciona</div>
+				<ComoFunciona />
 			</div>
 		);
 	}

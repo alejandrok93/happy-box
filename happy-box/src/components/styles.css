@@ -1,0 +1,39 @@
+/* COMO FUNCIONA STEPS CSS STYLING */
+
+.como-funciona-container {
+	width: 100%;
+	border: 1px solid red;
+}
+
+.como-funciona-container h1 {
+	width: 315px;
+	margin: 25px auto;
+	font-size: 2.4em;
+}
+
+.steps-wrapper {
+	margin: 5%;
+	border: 1px solid green;
+}
+
+.step {
+	width: 80%;
+	min-height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin: 15px auto;
+	border: 1px solid pink;
+	padding: 0 10%;
+}
+
+.step .icon {
+	width: 250px;
+	height: 85px;
+	border: 1px solid gray;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}
