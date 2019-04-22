@@ -3,6 +3,7 @@ import React from 'react';
 import './styles.css';
 
 import Step from './Step';
+import StepWithSubtext from './StepWithSubtext';
 
 const ComoFunciona = props => {
 	return (
@@ -10,25 +11,14 @@ const ComoFunciona = props => {
 			<h1 id="como-funciona">Como funciona?</h1>
 			<div className="steps-wrapper">
 				<Step text="Elige la caja que más te guste" />
-				<div className="step reverse">
-					<p className="main-text">Personaliza tu caja</p>
-					<span> > </span>
-					<div className="icon">
-						<img src="./icono" alt="Icono caja" />
-					</div>
-				</div>
-				<div className="step">
-					<div className="text">
-						<p className="main-text">Personaliza objetos en interior</p>
-						<p className="subtext">
-							Aplica para cajas con taza, copa, vaso, y termo
-						</p>
-					</div>
-					<span> > </span>
-					<div className="icon">
-						<img src="./icono" alt="Icono caja" />
-					</div>
-				</div>
+				<Step text="Personaliza tu caja" reverse={true} />
+				<StepWithSubtext
+					text="Personaliza objetos en interior"
+					subtext="Aplica para cajas con taza, copa, vaso, y termo"
+				/>
+				<Step text="Ingresa los datos de entrega" />
+				<Step text="Realiza el pago" reversed={true} />
+				<Step text="Recibe tu happy box" />
 			</div>
 		</section>
 	);
