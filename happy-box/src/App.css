@@ -5,7 +5,6 @@
 .container {
 	max-width: 1500px;
 	margin: 0 auto;
-	border: 1px solid black;
 }
 
 /* Hero Image Container CSS STYLYING */
@@ -18,13 +17,6 @@
 	background-image: url('./img/background-image.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-}
-
-.hero-image-container .logo {
-	display: block;
-	width: 200px;
-	height: 80px;
-	border: 1px solid black;
 }
 
 .hero-image-container .main-content {
@@ -87,10 +79,3 @@
 }
 
 /* ------------------- TEMPORARY LOGO STYLE ------- */
-
-.logo {
-	display: block;
-	width: 200px;
-	height: 80px;
-	border: 1px solid black;
-}

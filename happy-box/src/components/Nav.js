@@ -2,6 +2,9 @@ import React from 'react';
 
 import './styles.css';
 
+//Import images
+import logo from '../img/logo.png';
+
 const Nav = props => {
 	// const onClick = e => {
 
@@ -9,7 +12,7 @@ const Nav = props => {
 
 	return (
 		<div className="header">
-			<img class="logo" alt="Happy Box logo" />
+			<img class="logo" alt="Happy Box logo" src={logo} />
 			<nav className="header-nav">
 				<ul>
 					<li>
