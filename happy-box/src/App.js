@@ -14,8 +14,13 @@ import CajaInfo from './components/CajaInfo';
 class App extends Component {
 	constructor() {
 		super();
-		this.state = { scrolling: false };
+		this.state = { scrolling: false, displayBoxInfo: false };
 	}
+
+	toggleBoxInfo = () => {
+		console.log('toggle this biatch');
+		this.setState({ displayBoxInfo: !this.state.displayBoxInfo });
+	};
 
 	render() {
 		console.log(this.state);
@@ -50,8 +55,12 @@ class App extends Component {
 				</div>
 
 				<ComoFunciona />
-				<EligeTuCaja />
-				<CajaInfo />
+				<EligeTuCaja toggleBoxInfo={this.toggleBoxInfo} />
+				{this.state.displayBoxInfo ? (
+					<CajaInfo toggleBoxInfo={this.toggleBoxInfo} />
+				) : (
+					''
+				)}
 			</div>
 		);
 	}

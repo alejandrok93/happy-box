@@ -7,7 +7,7 @@ import flecha from '../img/flecha-derecha.png';
 console.log(flecha);
 const Step = props => {
 	const reversed = props.reversed ? 'reverse' : '';
-	console.log(reversed);
+
 	return (
 		<div className={`step ${reversed}`}>
 			<p className="main-text">{props.text}</p>

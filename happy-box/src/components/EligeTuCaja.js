@@ -15,8 +15,16 @@ const EligeTuCaja = props => {
 		<section className="cajas-container">
 			<h1 id="cajas">Elige tu happy box</h1>
 			<div className="cajas-wrapper">
-				<Caja img={netflixBox} alt="Netflix box" />
-				<Caja img={wineBox} alt="Wine lovers box" />
+				<Caja
+					toggleBoxInfo={props.toggleBoxInfo}
+					img={netflixBox}
+					alt="Netflix box"
+				/>
+				<Caja
+					toggleBoxInfo={props.toggleBoxInfo}
+					img={wineBox}
+					alt="Wine lovers box"
+				/>
 				<Caja img={spaBox} alt="Spa box" />
 				<Caja img={drinksBox} alt="Drinks box" />
 				<Caja img={cheersBox} alt="Cheers box" />

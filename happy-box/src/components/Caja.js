@@ -2,7 +2,7 @@ import React from 'react';
 
 const Caja = props => {
 	return (
-		<div className="caja">
+		<div onClick={props.toggleBoxInfo} className="caja">
 			<img src={props.img} alt={props.alt} />
 		</div>
 	);

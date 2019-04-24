@@ -6,7 +6,9 @@ const CajaInfo = props => {
 	return (
 		<div className="caja-info-container">
 			<div className="caja-info">
-				<span className="close">X</span>
+				<span onClick={props.toggleBoxInfo} className="close">
+					X
+				</span>
 				<h1>Que Incluye?</h1>
 				<ul>
 					<li>Membresia para ver Netflix por un mes</li>
