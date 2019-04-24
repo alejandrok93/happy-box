@@ -29,8 +29,11 @@
 }
 
 .step .icon {
-	width: 250px;
-	height: 125px;
+	width: 35%;
+}
+
+.step .main-text {
+	margin: 0px;
 }
 
 .step .icon-img {

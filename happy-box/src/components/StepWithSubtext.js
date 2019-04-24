@@ -10,7 +10,7 @@ const StepWithSubText = props => {
 			</div>
 			<span>></span>
 			<div className="icon">
-				<img src={props.img} alt="Icono caja" />
+				<img className="icon-img" src={props.icon} alt="Icono caja" />
 			</div>
 		</div>
 	);
