@@ -146,6 +146,33 @@ CAJAS OPCIONES CSS STYLING */
 	width: 100%;
 }
 
+/* CAJA INFO CSS STYLING  */
+
+.caja-info-container {
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.caja-info {
+	width: 500px;
+	min-height: 350px;
+	border: 1px solid black;
+	margin: 50px auto;
+	background-color: gray;
+}
+
+.caja-info .close {
+	position: relative;
+	font-size: 36px;
+	top: -40px;
+	left: 500px;
+	cursor: pointer;
+}
+
 /* MEDIA QUERIES FOR RESPONSIVE DESIGN */
 
 @media only screen and (max-width: 600px) {

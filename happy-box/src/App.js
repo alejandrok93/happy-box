@@ -9,6 +9,7 @@ import cajasImg from './img/cajas.png';
 import ComoFunciona from './components/ComoFunciona';
 import EligeTuCaja from './components/EligeTuCaja';
 import Nav from './components/Nav';
+import CajaInfo from './components/CajaInfo';
 
 class App extends Component {
 	constructor() {
@@ -50,6 +51,7 @@ class App extends Component {
 
 				<ComoFunciona />
 				<EligeTuCaja />
+				<CajaInfo />
 			</div>
 		);
 	}
