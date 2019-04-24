@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 //Import images
@@ -7,6 +7,7 @@ import cajasImg from './img/cajas.png';
 
 //Import Components
 import ComoFunciona from './components/ComoFunciona';
+import EligeTuCaja from './components/EligeTuCaja';
 import Nav from './components/Nav';
 
 class App extends Component {
@@ -48,6 +49,7 @@ class App extends Component {
 				</div>
 
 				<ComoFunciona />
+				<EligeTuCaja />
 			</div>
 		);
 	}

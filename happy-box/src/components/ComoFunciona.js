@@ -11,13 +11,18 @@ import personalizaIcon from '../img/personaliza-icono.png';
 import designIcon from '../img/design-icono.png';
 import ingresaIcon from '../img/ingresa-icono.png';
 import pagaIcon from '../img/paga-icono.png';
+import flechaDerecha from '../img/flecha-derecha.png';
 
 const ComoFunciona = props => {
 	return (
 		<section className="como-funciona-container">
 			<h1 id="como-funciona">Como funciona?</h1>
 			<div className="steps-wrapper">
-				<Step text="Elige la caja que más te guste" icon={cajasIcon} />
+				<Step
+					text="Elige la caja que más te guste"
+					icon={cajasIcon}
+					flecha={flechaDerecha}
+				/>
 				<Step
 					text="Personaliza tu caja"
 					reversed={true}
@@ -27,10 +32,15 @@ const ComoFunciona = props => {
 					text="Personaliza objetos en interior"
 					subtext="Aplica para cajas con taza, copa, vaso, y termo"
 					icon={designIcon}
+					flecha={flechaDerecha}
 				/>
-				<Step text="Ingresa los datos de entrega" icon={ingresaIcon} />
-				<Step text="Realiza el pago" reversed={true} icon={pagaIcon} />
-				<Step text="Recibe tu happy box" />
+				<Step
+					text="Ingresa los datos de entrega"
+					reversed={true}
+					icon={ingresaIcon}
+				/>
+				<Step text="Realiza el pago" icon={pagaIcon} flecha={flechaDerecha} />
+				<Step text="Recibe tu happy box" reversed={true} />
 			</div>
 		</section>
 	);

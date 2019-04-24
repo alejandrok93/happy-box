@@ -2,7 +2,7 @@
 
 .como-funciona-container {
 	width: 100%;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 .como-funciona-container h1 {
@@ -13,7 +13,7 @@
 
 .steps-wrapper {
 	margin: 5%;
-	border: 1px solid green;
+	/* border: 1px solid green; */
 }
 
 .step {
@@ -23,13 +23,14 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	margin: 15px auto;
-	border: 1px solid pink;
+	margin: 40px auto;
+	/* border: 1px solid pink; */
 	padding: 0 10%;
 }
 
 .step .icon {
 	width: 35%;
+	min-width: 150px;
 }
 
 .step .main-text {
@@ -38,6 +39,10 @@
 
 .step .icon-img {
 	width: 100%;
+}
+
+.step .flecha img {
+	width: 25px;
 }
 
 .reverse {
@@ -64,8 +69,7 @@
 .header-nav {
 	width: 45%;
 	min-height: 55px;
-	/* position: relative;
-	bottom: -60px; */
+	min-width: 400px;
 }
 
 .header-nav ul {
@@ -75,6 +79,7 @@
 	width: 100%;
 	/* flex-wrap: wrap; */
 	list-style-type: none;
+	overflow: hidden;
 }
 
 .nav-link {
@@ -102,4 +107,50 @@
 	display: block;
 	width: 80px;
 	height: 70px;
+}
+
+/* 
+CAJAS OPCIONES CSS STYLING */
+
+.cajas-container {
+	border: 1px solid black;
+}
+
+.cajas-container h1 {
+	width: 325px;
+	margin: 25px auto;
+	font-size: 2.4em;
+}
+
+.cajas-wrapper {
+	margin: 5%;
+	border: 1px solid green;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.caja {
+	width: 250px;
+	height: 150px;
+	border: 1px solid red;
+	cursor: pointer;
+	margin: 25px;
+}
+
+.caja:hover {
+	box-shadow: 5px 5px 5px;
+}
+
+.caja img {
+	width: 100%;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 600px) {
+	.step {
+		padding: 0px;
+		width: 95%;
+	}
 }
