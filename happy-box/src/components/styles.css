@@ -133,7 +133,6 @@ CAJAS OPCIONES CSS STYLING */
 .caja {
 	width: 250px;
 	height: 150px;
-	border: 1px solid red;
 	cursor: pointer;
 	margin: 25px;
 }
